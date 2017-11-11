@@ -1,5 +1,6 @@
 ;
-{some info 1
+{some in
+fo 1
 info 2
 {some info 2}
 some 3
