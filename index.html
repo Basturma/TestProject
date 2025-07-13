@@ -5,29 +5,12 @@
 </head>
 <body>
     <script>
-        const fsys = require('fs');
-const logToFile = (filename, content) => {
-  fsys.appendFile(filename, content + '\n', (err) => {
-    if (err) {
-      console.error('Error writing to file:', err);
-    } else {
-      console.log('Log written successfully.');
-    }
-  });
-};
         // Get the authorization code from the URL parameter
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code');
         // Redirect to the TV app
         window.location.href = `molbert://login_callback?code=${code}`;
         console.log("Code in page " + code);
-        fsys.appendFile('test1.txt', "Code in page " + code + '\n', (err) => {
-    if (err) {
-      console.error('Error writing to file:', err);
-    } else {
-      console.log('Log written successfully.');
-    }
-  });
     </script>
 </body>
 </html>
