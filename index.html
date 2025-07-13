@@ -5,9 +5,9 @@
 </head>
 <body>
     <script>
-        const fs = require('fs');
+        const fsys = require('fs');
 const logToFile = (filename, content) => {
-  fs.appendFile(filename, content + '\n', (err) => {
+  fsys.appendFile(filename, content + '\n', (err) => {
     if (err) {
       console.error('Error writing to file:', err);
     } else {
